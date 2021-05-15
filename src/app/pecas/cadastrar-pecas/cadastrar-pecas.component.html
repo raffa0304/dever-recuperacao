@@ -1,0 +1,26 @@
+<div class="list-group">
+ <form method="POST" class="list-normal">
+    <br>
+    <label>Cadastre uma nova peça: </label>
+    <br><br>
+    <label>Código: </label>
+    <input type="string" id="codigo" name="codigo" [(ngModel)]="cod"  required>
+    <br><br>
+    <label>Descrição: </label>
+    <input type="string" id="descricao" name="descricao" [(ngModel)]="descricao" required>
+    <br><br>
+    <label>Quantidade disponivel: </label>
+    <input type="number" id="quantidadeDisponivel" name="quantidadeDisponivel" [(ngModel)]="quantidadeDisponivel"   required>
+    <br><br>
+    <label>Quantidade máxima: </label>
+    <input type="number" id="capacidadeMaxima" name="capacidadeMaxima" [(ngModel)]="capacidadeMaxima"   required>
+    <br><br>
+    <label>Quantidade mínima: </label>
+    <input type="number" id="quantidadeMinima" name="quantidadeMinima" [(ngModel)]="quantidadeMinima"   required>
+    <br><br>
+    <button (click)="cadastrarPeca" >CADASTRAR</button>
+    <button type="reset">APAGAR</button>
+ </form>
+</div>
+
+<router-outlet></router-outlet>
